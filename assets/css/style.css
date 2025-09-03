@@ -1,70 +1,52 @@
-/* General 
-body {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #000000;
-}*/
-
 /* Encabezado o header */
 
-header{
-    height: 100px;
-    background-color:#b2f0f0;
-    display:flex;
-    align-items: center;
-}
-
-.header {
-   display:flex;
-   align-items:center;
-   justify-content: space-between;
+.header{
+  background-color: #b2f0f0;
+  height: 100px;
 
 }
 
-/*
-.header .contenedor {
-    max-width: 1320px;
-    width: 100%;          
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    
-}
+/*ESTILO*/
 
-*/
+/*.header {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  background-color: #b2f0f0;
+  padding: 0 15px;
+  box-sizing: border-box;
 
+}*/
 
 
 /* Logo */
-.header .logo span {
+.header .logo a {
   font-size: 24px;
   color: #04040f;
   font-weight: bold;
-  margin: 0;
+  text-decoration: none;
 }
-
 
 
 /* Navegacion */
 
-header nav {
+/*
+.header nav {
     display: flex;
     align-items: center;
    
    
 }
-
+*/
 .header nav ul {
     display: flex;
     gap: 20px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 
 }
-
 
 .header nav ul li a {
     text-decoration: none;
@@ -76,7 +58,7 @@ header nav {
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
+.nav ul li a:hover {
     background-color: #1c1f50;
 
 }
@@ -86,25 +68,9 @@ nav ul li a:hover {
 }
 
 
-/* HEADER */
-.header {
-  background-color: #b2f0f0;
-  padding: 15px;
-}
 
-.header ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
 
-.header a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
+/*------------------------------------------------------*/
 
 /* Titulo */
 .titulo {
@@ -146,8 +112,202 @@ nav ul li a:hover {
   line-height: 1.5; 
 }  
 
+/*-- pagina ayuda.html*/
 
 
+main.titulo-contacto {
+  text-align: center;          
+  background-color: #730b7d;   
+  color: #fff;                 
+  padding: 20px 20px;          
+  border-radius: 10px;         
+  margin-bottom: 30px;
+}       
+
+/*en general*/
+main h1 {
+  text-align: left;            
+  background-color: #730b7d;   
+  color: #fff;                 
+  padding: 10px 15px;          
+  border-radius: 8px;          
+  margin: 20px 0 30px 0;       
+  width: fit-content;          
+  font-size: 1.5rem;  
+
+}
+
+
+.video {
+  display: flex;
+  flex-direction: column;      
+  align-items: center;         
+  gap: 15px;                   
+  padding: 20px;
+}
+
+.video h2 {
+  text-align: center;
+  color: #000;                 
+  margin: 0;     
+}              
+
+.video videito {
+  max-width: 100%;             
+  border-radius: 10px;         
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/*----página vuelos.html------*/
+.subtitulo {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.vuelos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: #730b7d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.card button:hover {
+  background-color: #540759;
+}
+
+
+/* Barra de búsqueda paquetes.html*/
+.principal {
+  text-align: center;
+  position: relative;
+}
+
+.principal img {
+    max-height: 600px;   
+    object-fit: cover;   
+    display: block;
+  /*width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px; */
+}
+
+.busqueda {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.busqueda form {
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+  padding: 10px 15px;
+  border-radius: 30px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  gap: 10px;
+}
+
+.busqueda label {
+  font-weight: bold;
+}
+
+.busqueda select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.busqueda button {
+  background: #730b7d;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.busqueda button:hover {
+  background: #540759;
+}
+
+/*Pagina testimonios.html*/
+.video-testimonio {
+  margin-bottom: 2rem;
+}
+
+.video-testimonio h2 {
+  margin-bottom: 1rem;
+}
+
+.video-testimonio .contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center; 
+}
+
+.texto-recuadro {
+  background-color: #5b6c94;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+/*Hero*/
+.hero {
+  height: 100vh; /**/
+  background-size: cover;    
+  background-position: center; 
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*para ayuda.html*/
+.hero-londres {
+  background-image: url("../img/London_Skyline.jpeg");
+}
+
+/*para paquetes.html*/
+.hero-avion {
+  background-image: url("../img/avionv.jpg");
+}
 
 
 /*-------------------------*/

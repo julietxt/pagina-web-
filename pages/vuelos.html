@@ -5,30 +5,40 @@
         <title>Vuelos - Agencia de Viajes</title>
         <link rel="stylesheet" href="../assets/css/style.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     </head>
     
     <body>
-        <header class="header">
-            <div class="contenedor">
-                <div class= "logo">
-                    <span>MisViajes.com</span>
+        <header>
+            <div class="container header">
+                <div class="row">
+                    <div class="col-4">
+                        <div class= "logo">
+                            <a class="navbar-brand" href="index.html">MisViajes.com</a>
+                        </div>  
+                    </div> 
+                        
+                    
+                    <nav class="col-8">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="vuelos.html"class="active">Vuelos</a></li>
+                            <li><a href="paquetes.html">Paquetes</a></li>
+                            <li><a href="testimonios.html">Testimonios</a></li>
+                            <li><a href="ayuda.html">Ayuda</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="vuelos.html"class="active">Vuelos</a></li>
-                        <li><a href="paquetes.html">Paquetes</a></li>
-                        <li><a href="testimonios.html">Testimonios</a></li>
-                        <li><a href="ayuda.html">Ayuda</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
             </div>
         </header>
 
         <main>
-            <h2 class="subtitulo">Encontrá vuelos baratos</h2>
+            <section class="titulo">
+                <h1>Encontrá vuelos baratos</h1>
+            </section>
 
             <section class="vuelos">
                 <div class="card">
@@ -51,5 +61,10 @@
                     <i class="fa-brands fa-square-youtube"></i>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        
+
     </body>
 </html>
