@@ -62,31 +62,6 @@
   color: #2a2e75;
 }
 
-/*version para celulares*/
-@media (max-width: 768px) {
-  .hamburguesa {
-    display: block;
-  }
-
-
-/*para ocultar el menu*/
-.header nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    background-color: #2a2e75;
-    width: 200px;
-    padding: 10px;
-  }
-
-  .header nav ul.show {
-    display: flex;
-  }
-
-}
-
 
 
 
@@ -131,7 +106,13 @@
   margin-top: 12px;   
   text-align: justify;
   line-height: 1.5; 
-}  
+} 
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /*-- pagina ayuda.html*/
 
@@ -152,7 +133,9 @@ main h1 {
   color: #fff;                 
   padding: 10px 15px;          
   border-radius: 8px;          
-  margin: 20px 0 30px 0;       
+  margin: 20px 0 30px 0;
+  width: 100%;
+  max-width: 600px;       
   width: fit-content;          
   font-size: 1.5rem;  
 
@@ -173,7 +156,7 @@ main h1 {
   margin: 0;     
 }              
 
-.video videito {
+.video video {
   max-width: 100%;             
   border-radius: 10px;         
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -247,36 +230,41 @@ main h1 {
 .busqueda {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin: 40px auto;
+  padding-bottom: 40px;
 }
 
 .busqueda form {
   display: flex;
   align-items: center;
   background: #f3f3f3;
-  padding: 10px 15px;
-  border-radius: 30px; 
+  padding: 10px 25px;
+  border-radius: 40px; 
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  gap: 10px;
+  gap: 15px;
+  max-width: 500px;
+  width: 90%;
 }
 
 .busqueda label {
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .busqueda select {
-  padding: 8px 12px;
+  padding: 8px 18px;
   border: 1px solid #ccc;
   border-radius: 20px;
   outline: none;
+  font-size: 1rem;
 }
 
 .busqueda button {
   background: #730b7d;
   border: none;
   color: #fff;
-  padding: 8px 15px;
-  border-radius: 20px;
+  padding: 12px 20px;
+  border-radius: 25px;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -311,7 +299,7 @@ main h1 {
 
 /*Hero*/
 .hero {
-  height: 100vh; /**/
+  height: 100vh; 
   background-size: cover;    
   background-position: center; 
   background-repeat: no-repeat;
@@ -379,7 +367,7 @@ main h1 {
     background-color: #2e8c00;
 }
 
-/* footer */
+/* -----footer----- */
 footer {
     background-color: #5b6c94;
     text-align: center;
@@ -401,4 +389,83 @@ footer .redes i:hover {
 }
 
 
+/*------------------------*/
 
+/*version para celulares*/
+@media (max-width: 768px) {
+  .hamburguesa {
+    display: block;
+  }
+
+
+/*para ocultar el menu*/
+  .header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #2a2e75;
+    width: 200px;
+    padding: 10px;
+  }
+
+.header nav ul.show {
+    display: flex;
+  }
+
+/*para el footer*/
+  .titulo h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    padding: 15px;
+  }
+
+  .tarjeta p {
+    font-size: 0.9rem;
+  }
+
+  footer .redes {
+    flex-wrap: wrap;
+  }
+
+  footer .redes i {
+    font-size: 28px;
+  }
+
+  /*paquetes.html*/
+  .hero-contenido h1 { 
+    font-size: 1.8rem;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .busqueda form {
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .busqueda select,
+  .busqueda button {
+    width: 100%;
+  }
+
+  /*ayuda.html*/
+  main h1 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .video h2 {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .video video {
+    width: 100%;
+  }
+
+
+}
